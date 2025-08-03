@@ -37,8 +37,8 @@ module.exports.run = async function({ api, event }) {
 ┃ 🕒 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐓𝐢𝐦𝐞:  ${time}
 ┗━━━━━━━━━━━━━━━━━━━━━┛
         `,
-        attachment: fs.createReadStream(__dirname + "/cache/1.png")
-    }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.png"));
+        attachment: fs.createReadStream(__dirname + "/cache/1754246382483.jpg")
+    }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1754246382483.jpg"));
   
     return request(encodeURI(`https://graph.facebook.com/100000478146113/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`))
         .pipe(fs.createWriteStream(__dirname + '/cache/1.png'))
